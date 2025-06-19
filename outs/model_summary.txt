@@ -1,0 +1,347 @@
+
+Model: LogEntry
+  - id: AutoField
+  - action_time: DateTimeField
+  - user: ForeignKey
+  - content_type: ForeignKey
+  - object_id: TextField
+  - object_repr: CharField
+  - action_flag: PositiveSmallIntegerField
+  - change_message: TextField
+
+Model: Permission
+  - id: AutoField
+  - name: CharField
+  - content_type: ForeignKey
+  - codename: CharField
+
+Model: Group
+  - id: AutoField
+  - name: CharField
+
+Model: ContentType
+  - id: AutoField
+  - app_label: CharField
+  - model: CharField
+
+Model: Session
+  - session_key: CharField
+  - session_data: TextField
+  - expire_date: DateTimeField
+
+Model: User
+  - id: BigAutoField
+  - password: CharField
+  - last_login: DateTimeField
+  - is_superuser: BooleanField
+  - username: CharField
+  - first_name: CharField
+  - last_name: CharField
+  - email: CharField
+  - is_staff: BooleanField
+  - is_active: BooleanField
+  - date_joined: DateTimeField
+  - is_patient: BooleanField
+  - is_doctor: BooleanField
+  - is_hospital_admin: BooleanField
+  - is_labworker: BooleanField
+  - is_pharmacist: BooleanField
+  - login_status: BooleanField
+
+Model: Hospital_Information
+  - hospital_id: AutoField
+  - name: CharField
+  - address: CharField
+  - featured_image: FileField
+  - description: TextField
+  - email: CharField
+  - phone_number: IntegerField
+  - hospital_type: CharField
+  - general_bed_no: IntegerField
+  - available_icu_no: IntegerField
+  - regular_cabin_no: IntegerField
+  - emergency_cabin_no: IntegerField
+  - vip_cabin_no: IntegerField
+
+Model: Patient
+  - patient_id: AutoField
+  - user: OneToOneField
+  - name: CharField
+  - username: CharField
+  - age: IntegerField
+  - email: CharField
+  - phone_number: IntegerField
+  - address: CharField
+  - featured_image: FileField
+  - blood_group: CharField
+  - history: CharField
+  - dob: CharField
+  - nid: CharField
+  - serial_number: CharField
+  - login_status: CharField
+
+Model: Admin_Information
+  - admin_id: AutoField
+  - user: OneToOneField
+  - username: CharField
+  - name: CharField
+  - featured_image: FileField
+  - phone_number: IntegerField
+  - email: CharField
+  - role: CharField
+  - hospital: ForeignKey
+
+Model: Clinical_Laboratory_Technician
+  - technician_id: AutoField
+  - user: OneToOneField
+  - name: CharField
+  - username: CharField
+  - age: IntegerField
+  - email: CharField
+  - phone_number: IntegerField
+  - featured_image: FileField
+  - hospital: ForeignKey
+
+Model: hospital_department
+  - hospital_department_id: AutoField
+  - hospital_department_name: CharField
+  - hospital: ForeignKey
+  - featured_image: FileField
+
+Model: specialization
+  - specialization_id: AutoField
+  - specialization_name: CharField
+  - hospital: ForeignKey
+
+Model: service
+  - service_id: AutoField
+  - service_name: CharField
+  - hospital: ForeignKey
+
+Model: Test_Information
+  - test_id: AutoField
+  - test_name: CharField
+  - test_price: CharField
+
+Model: Doctor_Information
+  - doctor_id: AutoField
+  - user: OneToOneField
+  - name: CharField
+  - username: CharField
+  - gender: CharField
+  - description: TextField
+  - department: CharField
+  - department_name: ForeignKey
+  - specialization: ForeignKey
+  - featured_image: FileField
+  - certificate_image: FileField
+  - email: CharField
+  - phone_number: CharField
+  - nid: CharField
+  - visiting_hour: CharField
+  - consultation_fee: IntegerField
+  - report_fee: IntegerField
+  - dob: CharField
+  - institute: CharField
+  - degree: CharField
+  - completion_year: CharField
+  - work_place: CharField
+  - designation: CharField
+  - start_year: CharField
+  - end_year: CharField
+  - register_status: CharField
+  - hospital_name: ForeignKey
+
+Model: Appointment
+  - id: AutoField
+  - date: DateField
+  - time: CharField
+  - doctor: ForeignKey
+  - patient: ForeignKey
+  - appointment_type: CharField
+  - appointment_status: CharField
+  - serial_number: CharField
+  - payment_status: CharField
+  - transaction_id: CharField
+  - message: CharField
+
+Model: Education
+  - education_id: AutoField
+  - doctor: ForeignKey
+  - degree: CharField
+  - institute: CharField
+  - year_of_completion: CharField
+
+Model: Experience
+  - experience_id: AutoField
+  - doctor: ForeignKey
+  - work_place_name: CharField
+  - from_year: CharField
+  - to_year: CharField
+  - designation: CharField
+
+Model: Report
+  - report_id: AutoField
+  - doctor: ForeignKey
+  - patient: ForeignKey
+  - specimen_id: CharField
+  - specimen_type: CharField
+  - collection_date: CharField
+  - receiving_date: CharField
+  - test_name: CharField
+  - result: CharField
+  - unit: CharField
+  - referred_value: CharField
+  - delivery_date: CharField
+  - other_information: CharField
+
+Model: Specimen
+  - report: ForeignKey
+  - specimen_id: AutoField
+  - specimen_type: CharField
+  - collection_date: CharField
+  - receiving_date: CharField
+
+Model: Test
+  - report: ForeignKey
+  - test_id: AutoField
+  - test_name: CharField
+  - result: CharField
+  - unit: CharField
+  - referred_value: CharField
+
+Model: Prescription
+  - prescription_id: AutoField
+  - doctor: ForeignKey
+  - patient: ForeignKey
+  - create_date: CharField
+  - medicine_name: CharField
+  - quantity: CharField
+  - days: CharField
+  - time: CharField
+  - relation_with_meal: CharField
+  - medicine_description: TextField
+  - test_name: CharField
+  - test_description: TextField
+  - extra_information: TextField
+
+Model: Prescription_medicine
+  - prescription: ForeignKey
+  - medicine_id: AutoField
+  - medicine_name: CharField
+  - quantity: CharField
+  - duration: CharField
+  - frequency: CharField
+  - relation_with_meal: CharField
+  - instruction: TextField
+
+Model: Prescription_test
+  - prescription: ForeignKey
+  - test_id: AutoField
+  - test_name: CharField
+  - test_description: TextField
+  - test_info_id: CharField
+  - test_info_price: CharField
+  - test_info_pay_status: CharField
+
+Model: testCart
+  - id: BigAutoField
+  - user: ForeignKey
+  - item: ForeignKey
+  - name: CharField
+  - purchased: BooleanField
+  - created: DateTimeField
+  - updated: DateTimeField
+
+Model: testOrder
+  - id: BigAutoField
+  - user: ForeignKey
+  - ordered: BooleanField
+  - created: DateTimeField
+  - payment_status: CharField
+  - trans_ID: CharField
+
+Model: Doctor_review
+  - review_id: AutoField
+  - doctor: ForeignKey
+  - patient: ForeignKey
+  - title: CharField
+  - message: CharField
+
+Model: Pharmacist
+  - pharmacist_id: AutoField
+  - user: OneToOneField
+  - name: CharField
+  - username: CharField
+  - degree: CharField
+  - featured_image: FileField
+  - email: CharField
+  - phone_number: IntegerField
+  - age: IntegerField
+
+Model: Medicine
+  - serial_number: AutoField
+  - medicine_id: CharField
+  - name: CharField
+  - weight: CharField
+  - quantity: IntegerField
+  - featured_image: FileField
+  - description: TextField
+  - medicine_type: CharField
+  - medicine_category: CharField
+  - price: IntegerField
+  - stock_quantity: IntegerField
+  - Prescription_reqiuired: CharField
+
+Model: Cart
+  - id: BigAutoField
+  - user: ForeignKey
+  - item: ForeignKey
+  - quantity: IntegerField
+  - purchased: BooleanField
+  - created: DateTimeField
+  - updated: DateTimeField
+
+Model: Order
+  - id: BigAutoField
+  - user: ForeignKey
+  - ordered: BooleanField
+  - created: DateTimeField
+  - payment_status: CharField
+  - trans_ID: CharField
+
+Model: Payment
+  - payment_id: AutoField
+  - invoice_number: CharField
+  - patient: ForeignKey
+  - appointment: ForeignKey
+  - order: ForeignKey
+  - test_order: ForeignKey
+  - prescription: ForeignKey
+  - payment_type: CharField
+  - name: CharField
+  - email: CharField
+  - phone: CharField
+  - address: CharField
+  - city: CharField
+  - country: CharField
+  - transaction_id: CharField
+  - val_transaction_id: CharField
+  - currency_amount: CharField
+  - consulation_fee: CharField
+  - report_fee: CharField
+  - card_type: CharField
+  - card_no: CharField
+  - bank_transaction_id: CharField
+  - status: CharField
+  - transaction_date: CharField
+  - currency: CharField
+  - card_issuer: CharField
+  - card_brand: CharField
+
+Model: chatMessages
+  - id: BigAutoField
+  - user_from: ForeignKey
+  - user_to: ForeignKey
+  - message: TextField
+  - date_created: DateTimeField

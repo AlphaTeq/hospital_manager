@@ -59,6 +59,9 @@ INSTALLED_APPS = [
     'rest_framework',
     'ChatApp.apps.ChatappConfig',
     'debug_toolbar',
+
+    "django_extensions",
+    "drf_yasg",
 ]
 
 MIDDLEWARE = [

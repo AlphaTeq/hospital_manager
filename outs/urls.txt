@@ -1,0 +1,349 @@
+
+/       hospital.views.hospital_home    hospital_home
+/__debug__/history_refresh/     debug_toolbar.panels.history.views.history_refresh      djdt:history_refresh
+/__debug__/history_sidebar/     debug_toolbar.panels.history.views.history_sidebar      djdt:history_sidebar
+/__debug__/render_panel/        debug_toolbar.views.render_panel        djdt:render_panel
+/__debug__/sql_explain/ debug_toolbar.panels.sql.views.sql_explain      djdt:sql_explain
+/__debug__/sql_profile/ debug_toolbar.panels.sql.views.sql_profile      djdt:sql_profile
+/__debug__/sql_select/  debug_toolbar.panels.sql.views.sql_select       djdt:sql_select
+/__debug__/template_source/     debug_toolbar.panels.templates.views.template_source    djdt:template_source
+/about-us/      hospital.views.about_us about-us
+/add-billing/   hospital.views.add_billing      add-billing
+/admin/ django.contrib.admin.sites.index        admin:index
+/admin/<app_label>/     django.contrib.admin.sites.app_index    admin:app_list
+/admin/<url>    django.contrib.admin.sites.catch_all_view
+/admin/ChatApp/chatmessages/    django.contrib.admin.options.changelist_view    admin:ChatApp_chatmessages_changelist
+/admin/ChatApp/chatmessages/<path:object_id>/   django.views.generic.base.RedirectView
+/admin/ChatApp/chatmessages/<path:object_id>/change/    django.contrib.admin.options.change_view        admin:ChatApp_chatmessages_change
+/admin/ChatApp/chatmessages/<path:object_id>/delete/    django.contrib.admin.options.delete_view        admin:ChatApp_chatmessages_delete
+/admin/ChatApp/chatmessages/<path:object_id>/history/   django.contrib.admin.options.history_view       admin:ChatApp_chatmessages_history
+/admin/ChatApp/chatmessages/add/        django.contrib.admin.options.add_view   admin:ChatApp_chatmessages_add
+/admin/auth/group/      django.contrib.admin.options.changelist_view    admin:auth_group_changelist
+/admin/auth/group/<path:object_id>/     django.views.generic.base.RedirectView
+/admin/auth/group/<path:object_id>/change/      django.contrib.admin.options.change_view        admin:auth_group_change
+/admin/auth/group/<path:object_id>/delete/      django.contrib.admin.options.delete_view        admin:auth_group_delete
+/admin/auth/group/<path:object_id>/history/     django.contrib.admin.options.history_view       admin:auth_group_history
+/admin/auth/group/add/  django.contrib.admin.options.add_view   admin:auth_group_add
+/admin/autocomplete/    django.contrib.admin.sites.autocomplete_view    admin:autocomplete
+/admin/doctor/appointment/      django.contrib.admin.options.changelist_view    admin:doctor_appointment_changelist
+/admin/doctor/appointment/<path:object_id>/     django.views.generic.base.RedirectView
+/admin/doctor/appointment/<path:object_id>/change/      django.contrib.admin.options.change_view        admin:doctor_appointment_change
+/admin/doctor/appointment/<path:object_id>/delete/      django.contrib.admin.options.delete_view        admin:doctor_appointment_delete
+/admin/doctor/appointment/<path:object_id>/history/     django.contrib.admin.options.history_view       admin:doctor_appointment_history
+/admin/doctor/appointment/add/  django.contrib.admin.options.add_view   admin:doctor_appointment_add
+/admin/doctor/doctor_information/       django.contrib.admin.options.changelist_view    admin:doctor_doctor_information_changelist
+/admin/doctor/doctor_information/<path:object_id>/      django.views.generic.base.RedirectView
+/admin/doctor/doctor_information/<path:object_id>/change/       django.contrib.admin.options.change_view        admin:doctor_doctor_information_change
+/admin/doctor/doctor_information/<path:object_id>/delete/       django.contrib.admin.options.delete_view        admin:doctor_doctor_information_delete
+/admin/doctor/doctor_information/<path:object_id>/history/      django.contrib.admin.options.history_view       admin:doctor_doctor_information_history
+/admin/doctor/doctor_information/add/   django.contrib.admin.options.add_view   admin:doctor_doctor_information_add
+/admin/doctor/doctor_review/    django.contrib.admin.options.changelist_view    admin:doctor_doctor_review_changelist
+/admin/doctor/doctor_review/<path:object_id>/   django.views.generic.base.RedirectView
+/admin/doctor/doctor_review/<path:object_id>/change/    django.contrib.admin.options.change_view        admin:doctor_doctor_review_change
+/admin/doctor/doctor_review/<path:object_id>/delete/    django.contrib.admin.options.delete_view        admin:doctor_doctor_review_delete
+/admin/doctor/doctor_review/<path:object_id>/history/   django.contrib.admin.options.history_view       admin:doctor_doctor_review_history
+/admin/doctor/doctor_review/add/        django.contrib.admin.options.add_view   admin:doctor_doctor_review_add
+/admin/doctor/education/        django.contrib.admin.options.changelist_view    admin:doctor_education_changelist
+/admin/doctor/education/<path:object_id>/       django.views.generic.base.RedirectView
+/admin/doctor/education/<path:object_id>/change/        django.contrib.admin.options.change_view        admin:doctor_education_change
+/admin/doctor/education/<path:object_id>/delete/        django.contrib.admin.options.delete_view        admin:doctor_education_delete
+/admin/doctor/education/<path:object_id>/history/       django.contrib.admin.options.history_view       admin:doctor_education_history
+/admin/doctor/education/add/    django.contrib.admin.options.add_view   admin:doctor_education_add
+/admin/doctor/experience/       django.contrib.admin.options.changelist_view    admin:doctor_experience_changelist
+/admin/doctor/experience/<path:object_id>/      django.views.generic.base.RedirectView
+/admin/doctor/experience/<path:object_id>/change/       django.contrib.admin.options.change_view        admin:doctor_experience_change
+/admin/doctor/experience/<path:object_id>/delete/       django.contrib.admin.options.delete_view        admin:doctor_experience_delete
+/admin/doctor/experience/<path:object_id>/history/      django.contrib.admin.options.history_view       admin:doctor_experience_history
+/admin/doctor/experience/add/   django.contrib.admin.options.add_view   admin:doctor_experience_add
+/admin/doctor/prescription/     django.contrib.admin.options.changelist_view    admin:doctor_prescription_changelist
+/admin/doctor/prescription/<path:object_id>/    django.views.generic.base.RedirectView
+/admin/doctor/prescription/<path:object_id>/change/     django.contrib.admin.options.change_view        admin:doctor_prescription_change
+/admin/doctor/prescription/<path:object_id>/delete/     django.contrib.admin.options.delete_view        admin:doctor_prescription_delete
+/admin/doctor/prescription/<path:object_id>/history/    django.contrib.admin.options.history_view       admin:doctor_prescription_history
+/admin/doctor/prescription/add/ django.contrib.admin.options.add_view   admin:doctor_prescription_add
+/admin/doctor/prescription_medicine/    django.contrib.admin.options.changelist_view    admin:doctor_prescription_medicine_changelist
+/admin/doctor/prescription_medicine/<path:object_id>/   django.views.generic.base.RedirectView
+/admin/doctor/prescription_medicine/<path:object_id>/change/    django.contrib.admin.options.change_view        admin:doctor_prescription_medicine_change
+/admin/doctor/prescription_medicine/<path:object_id>/delete/    django.contrib.admin.options.delete_view        admin:doctor_prescription_medicine_delete
+/admin/doctor/prescription_medicine/<path:object_id>/history/   django.contrib.admin.options.history_view       admin:doctor_prescription_medicine_history
+/admin/doctor/prescription_medicine/add/        django.contrib.admin.options.add_view   admin:doctor_prescription_medicine_add
+/admin/doctor/prescription_test/        django.contrib.admin.options.changelist_view    admin:doctor_prescription_test_changelist
+/admin/doctor/prescription_test/<path:object_id>/       django.views.generic.base.RedirectView
+/admin/doctor/prescription_test/<path:object_id>/change/        django.contrib.admin.options.change_view        admin:doctor_prescription_test_change
+/admin/doctor/prescription_test/<path:object_id>/delete/        django.contrib.admin.options.delete_view        admin:doctor_prescription_test_delete
+/admin/doctor/prescription_test/<path:object_id>/history/       django.contrib.admin.options.history_view       admin:doctor_prescription_test_history
+/admin/doctor/prescription_test/add/    django.contrib.admin.options.add_view   admin:doctor_prescription_test_add
+/admin/doctor/report/   django.contrib.admin.options.changelist_view    admin:doctor_report_changelist
+/admin/doctor/report/<path:object_id>/  django.views.generic.base.RedirectView
+/admin/doctor/report/<path:object_id>/change/   django.contrib.admin.options.change_view        admin:doctor_report_change
+/admin/doctor/report/<path:object_id>/delete/   django.contrib.admin.options.delete_view        admin:doctor_report_delete
+/admin/doctor/report/<path:object_id>/history/  django.contrib.admin.options.history_view       admin:doctor_report_history
+/admin/doctor/report/add/       django.contrib.admin.options.add_view   admin:doctor_report_add
+/admin/doctor/specimen/ django.contrib.admin.options.changelist_view    admin:doctor_specimen_changelist
+/admin/doctor/specimen/<path:object_id>/        django.views.generic.base.RedirectView
+/admin/doctor/specimen/<path:object_id>/change/ django.contrib.admin.options.change_view        admin:doctor_specimen_change
+/admin/doctor/specimen/<path:object_id>/delete/ django.contrib.admin.options.delete_view        admin:doctor_specimen_delete
+/admin/doctor/specimen/<path:object_id>/history/        django.contrib.admin.options.history_view       admin:doctor_specimen_history
+/admin/doctor/specimen/add/     django.contrib.admin.options.add_view   admin:doctor_specimen_add
+/admin/doctor/test/     django.contrib.admin.options.changelist_view    admin:doctor_test_changelist
+/admin/doctor/test/<path:object_id>/    django.views.generic.base.RedirectView
+/admin/doctor/test/<path:object_id>/change/     django.contrib.admin.options.change_view        admin:doctor_test_change
+/admin/doctor/test/<path:object_id>/delete/     django.contrib.admin.options.delete_view        admin:doctor_test_delete
+/admin/doctor/test/<path:object_id>/history/    django.contrib.admin.options.history_view       admin:doctor_test_history
+/admin/doctor/test/add/ django.contrib.admin.options.add_view   admin:doctor_test_add
+/admin/doctor/testcart/ django.contrib.admin.options.changelist_view    admin:doctor_testcart_changelist
+/admin/doctor/testcart/<path:object_id>/        django.views.generic.base.RedirectView
+/admin/doctor/testcart/<path:object_id>/change/ django.contrib.admin.options.change_view        admin:doctor_testcart_change
+/admin/doctor/testcart/<path:object_id>/delete/ django.contrib.admin.options.delete_view        admin:doctor_testcart_delete
+/admin/doctor/testcart/<path:object_id>/history/        django.contrib.admin.options.history_view       admin:doctor_testcart_history
+/admin/doctor/testcart/add/     django.contrib.admin.options.add_view   admin:doctor_testcart_add
+/admin/doctor/testorder/        django.contrib.admin.options.changelist_view    admin:doctor_testorder_changelist
+/admin/doctor/testorder/<path:object_id>/       django.views.generic.base.RedirectView
+/admin/doctor/testorder/<path:object_id>/change/        django.contrib.admin.options.change_view        admin:doctor_testorder_change
+/admin/doctor/testorder/<path:object_id>/delete/        django.contrib.admin.options.delete_view        admin:doctor_testorder_delete
+/admin/doctor/testorder/<path:object_id>/history/       django.contrib.admin.options.history_view       admin:doctor_testorder_history
+/admin/doctor/testorder/add/    django.contrib.admin.options.add_view   admin:doctor_testorder_add
+/admin/hospital/hospital_information/   django.contrib.admin.options.changelist_view    admin:hospital_hospital_information_changelist
+/admin/hospital/hospital_information/<path:object_id>/  django.views.generic.base.RedirectView
+/admin/hospital/hospital_information/<path:object_id>/change/   django.contrib.admin.options.change_view        admin:hospital_hospital_information_change
+/admin/hospital/hospital_information/<path:object_id>/delete/   django.contrib.admin.options.delete_view        admin:hospital_hospital_information_delete
+/admin/hospital/hospital_information/<path:object_id>/history/  django.contrib.admin.options.history_view       admin:hospital_hospital_information_history
+/admin/hospital/hospital_information/add/       django.contrib.admin.options.add_view   admin:hospital_hospital_information_add
+/admin/hospital/patient/        django.contrib.admin.options.changelist_view    admin:hospital_patient_changelist
+/admin/hospital/patient/<path:object_id>/       django.views.generic.base.RedirectView
+/admin/hospital/patient/<path:object_id>/change/        django.contrib.admin.options.change_view        admin:hospital_patient_change
+/admin/hospital/patient/<path:object_id>/delete/        django.contrib.admin.options.delete_view        admin:hospital_patient_delete
+/admin/hospital/patient/<path:object_id>/history/       django.contrib.admin.options.history_view       admin:hospital_patient_history
+/admin/hospital/patient/add/    django.contrib.admin.options.add_view   admin:hospital_patient_add
+/admin/hospital/user/   django.contrib.admin.options.changelist_view    admin:hospital_user_changelist
+/admin/hospital/user/<path:object_id>/  django.views.generic.base.RedirectView
+/admin/hospital/user/<path:object_id>/change/   django.contrib.admin.options.change_view        admin:hospital_user_change
+/admin/hospital/user/<path:object_id>/delete/   django.contrib.admin.options.delete_view        admin:hospital_user_delete
+/admin/hospital/user/<path:object_id>/history/  django.contrib.admin.options.history_view       admin:hospital_user_history
+/admin/hospital/user/add/       django.contrib.admin.options.add_view   admin:hospital_user_add
+/admin/hospital_admin/admin_information/        django.contrib.admin.options.changelist_view    admin:hospital_admin_admin_information_changelist
+/admin/hospital_admin/admin_information/<path:object_id>/       django.views.generic.base.RedirectView
+/admin/hospital_admin/admin_information/<path:object_id>/change/        django.contrib.admin.options.change_view        admin:hospital_admin_admin_information_change
+/admin/hospital_admin/admin_information/<path:object_id>/delete/        django.contrib.admin.options.delete_view        admin:hospital_admin_admin_information_delete
+/admin/hospital_admin/admin_information/<path:object_id>/history/       django.contrib.admin.options.history_view       admin:hospital_admin_admin_information_history
+/admin/hospital_admin/admin_information/add/    django.contrib.admin.options.add_view   admin:hospital_admin_admin_information_add
+/admin/hospital_admin/clinical_laboratory_technician/   django.contrib.admin.options.changelist_view    admin:hospital_admin_clinical_laboratory_technician_changelist
+/admin/hospital_admin/clinical_laboratory_technician/<path:object_id>/  django.views.generic.base.RedirectView
+/admin/hospital_admin/clinical_laboratory_technician/<path:object_id>/change/   django.contrib.admin.options.change_view        admin:hospital_admin_clinical_laboratory_technician_change
+/admin/hospital_admin/clinical_laboratory_technician/<path:object_id>/delete/   django.contrib.admin.options.delete_view        admin:hospital_admin_clinical_laboratory_technician_delete
+/admin/hospital_admin/clinical_laboratory_technician/<path:object_id>/history/  django.contrib.admin.options.history_view       admin:hospital_admin_clinical_laboratory_technician_history
+/admin/hospital_admin/clinical_laboratory_technician/add/       django.contrib.admin.options.add_view   admin:hospital_admin_clinical_laboratory_technician_add
+/admin/hospital_admin/hospital_department/      django.contrib.admin.options.changelist_view    admin:hospital_admin_hospital_department_changelist
+/admin/hospital_admin/hospital_department/<path:object_id>/     django.views.generic.base.RedirectView
+/admin/hospital_admin/hospital_department/<path:object_id>/change/      django.contrib.admin.options.change_view        admin:hospital_admin_hospital_department_change
+/admin/hospital_admin/hospital_department/<path:object_id>/delete/      django.contrib.admin.options.delete_view        admin:hospital_admin_hospital_department_delete
+/admin/hospital_admin/hospital_department/<path:object_id>/history/     django.contrib.admin.options.history_view       admin:hospital_admin_hospital_department_history
+/admin/hospital_admin/hospital_department/add/  django.contrib.admin.options.add_view   admin:hospital_admin_hospital_department_add
+/admin/hospital_admin/service/  django.contrib.admin.options.changelist_view    admin:hospital_admin_service_changelist
+/admin/hospital_admin/service/<path:object_id>/ django.views.generic.base.RedirectView
+/admin/hospital_admin/service/<path:object_id>/change/  django.contrib.admin.options.change_view        admin:hospital_admin_service_change
+/admin/hospital_admin/service/<path:object_id>/delete/  django.contrib.admin.options.delete_view        admin:hospital_admin_service_delete
+/admin/hospital_admin/service/<path:object_id>/history/ django.contrib.admin.options.history_view       admin:hospital_admin_service_history
+/admin/hospital_admin/service/add/      django.contrib.admin.options.add_view   admin:hospital_admin_service_add
+/admin/hospital_admin/specialization/   django.contrib.admin.options.changelist_view    admin:hospital_admin_specialization_changelist
+/admin/hospital_admin/specialization/<path:object_id>/  django.views.generic.base.RedirectView
+/admin/hospital_admin/specialization/<path:object_id>/change/   django.contrib.admin.options.change_view        admin:hospital_admin_specialization_change
+/admin/hospital_admin/specialization/<path:object_id>/delete/   django.contrib.admin.options.delete_view        admin:hospital_admin_specialization_delete
+/admin/hospital_admin/specialization/<path:object_id>/history/  django.contrib.admin.options.history_view       admin:hospital_admin_specialization_history
+/admin/hospital_admin/specialization/add/       django.contrib.admin.options.add_view   admin:hospital_admin_specialization_add
+/admin/hospital_admin/test_information/ django.contrib.admin.options.changelist_view    admin:hospital_admin_test_information_changelist
+/admin/hospital_admin/test_information/<path:object_id>/        django.views.generic.base.RedirectView
+/admin/hospital_admin/test_information/<path:object_id>/change/ django.contrib.admin.options.change_view        admin:hospital_admin_test_information_change
+/admin/hospital_admin/test_information/<path:object_id>/delete/ django.contrib.admin.options.delete_view        admin:hospital_admin_test_information_delete
+/admin/hospital_admin/test_information/<path:object_id>/history/        django.contrib.admin.options.history_view       admin:hospital_admin_test_information_history
+/admin/hospital_admin/test_information/add/     django.contrib.admin.options.add_view   admin:hospital_admin_test_information_add
+/admin/jsi18n/  django.contrib.admin.sites.i18n_javascript      admin:jsi18n
+/admin/login/   django.contrib.admin.sites.login        admin:login
+/admin/logout/  django.contrib.admin.sites.logout       admin:logout
+/admin/password_change/ django.contrib.admin.sites.password_change      admin:password_change
+/admin/password_change/done/    django.contrib.admin.sites.password_change_done admin:password_change_done
+/admin/pharmacy/cart/   django.contrib.admin.options.changelist_view    admin:pharmacy_cart_changelist
+/admin/pharmacy/cart/<path:object_id>/  django.views.generic.base.RedirectView
+/admin/pharmacy/cart/<path:object_id>/change/   django.contrib.admin.options.change_view        admin:pharmacy_cart_change
+/admin/pharmacy/cart/<path:object_id>/delete/   django.contrib.admin.options.delete_view        admin:pharmacy_cart_delete
+/admin/pharmacy/cart/<path:object_id>/history/  django.contrib.admin.options.history_view       admin:pharmacy_cart_history
+/admin/pharmacy/cart/add/       django.contrib.admin.options.add_view   admin:pharmacy_cart_add
+/admin/pharmacy/medicine/       django.contrib.admin.options.changelist_view    admin:pharmacy_medicine_changelist
+/admin/pharmacy/medicine/<path:object_id>/      django.views.generic.base.RedirectView
+/admin/pharmacy/medicine/<path:object_id>/change/       django.contrib.admin.options.change_view        admin:pharmacy_medicine_change
+/admin/pharmacy/medicine/<path:object_id>/delete/       django.contrib.admin.options.delete_view        admin:pharmacy_medicine_delete
+/admin/pharmacy/medicine/<path:object_id>/history/      django.contrib.admin.options.history_view       admin:pharmacy_medicine_history
+/admin/pharmacy/medicine/add/   django.contrib.admin.options.add_view   admin:pharmacy_medicine_add
+/admin/pharmacy/order/  django.contrib.admin.options.changelist_view    admin:pharmacy_order_changelist
+/admin/pharmacy/order/<path:object_id>/ django.views.generic.base.RedirectView
+/admin/pharmacy/order/<path:object_id>/change/  django.contrib.admin.options.change_view        admin:pharmacy_order_change
+/admin/pharmacy/order/<path:object_id>/delete/  django.contrib.admin.options.delete_view        admin:pharmacy_order_delete
+/admin/pharmacy/order/<path:object_id>/history/ django.contrib.admin.options.history_view       admin:pharmacy_order_history
+/admin/pharmacy/order/add/      django.contrib.admin.options.add_view   admin:pharmacy_order_add
+/admin/pharmacy/pharmacist/     django.contrib.admin.options.changelist_view    admin:pharmacy_pharmacist_changelist
+/admin/pharmacy/pharmacist/<path:object_id>/    django.views.generic.base.RedirectView
+/admin/pharmacy/pharmacist/<path:object_id>/change/     django.contrib.admin.options.change_view        admin:pharmacy_pharmacist_change
+/admin/pharmacy/pharmacist/<path:object_id>/delete/     django.contrib.admin.options.delete_view        admin:pharmacy_pharmacist_delete
+/admin/pharmacy/pharmacist/<path:object_id>/history/    django.contrib.admin.options.history_view       admin:pharmacy_pharmacist_history
+/admin/pharmacy/pharmacist/add/ django.contrib.admin.options.add_view   admin:pharmacy_pharmacist_add
+/admin/r/<int:content_type_id>/<path:object_id>/        django.contrib.contenttypes.views.shortcut      admin:view_on_site
+/admin/sslcommerz/payment/      django.contrib.admin.options.changelist_view    admin:sslcommerz_payment_changelist
+/admin/sslcommerz/payment/<path:object_id>/     django.views.generic.base.RedirectView
+/admin/sslcommerz/payment/<path:object_id>/change/      django.contrib.admin.options.change_view        admin:sslcommerz_payment_change
+/admin/sslcommerz/payment/<path:object_id>/delete/      django.contrib.admin.options.delete_view        admin:sslcommerz_payment_delete
+/admin/sslcommerz/payment/<path:object_id>/history/     django.contrib.admin.options.history_view       admin:sslcommerz_payment_history
+/admin/sslcommerz/payment/add/  django.contrib.admin.options.add_view   admin:sslcommerz_payment_add
+/api/   api.views.getRoutes
+/api/hospital/  api.views.getHospitals
+/api/hospital/<int:pk>/ api.views.getHospitalProfile
+/api/users/token/       rest_framework_simplejwt.views.TokenObtainPairView      token_obtain_pair
+/api/users/token/refresh/       rest_framework_simplejwt.views.TokenRefreshView token_refresh
+/appointments/  hospital.views.appointments     appointments
+/change-password/<int:pk>       hospital.views.change_password  change-password
+/chat-doctor/   hospital.views.chat_doctor      chat-doctor
+/chat/  ChatApp.views.home      chat-home
+/chat/<int:pk>/ hospital.views.chat     chat
+/chat/home/<int:pk>/    ChatApp.views.home      chat-home
+/chat/logout/   django.contrib.auth.views.LogoutView    chat-logout
+/chat/profile/  ChatApp.views.profile   chat-profile
+/chat/renew/    ChatApp.views.get_messages      chat-renew
+/chat/send/     ChatApp.views.send_chat chat-send
+/checkout-payment/      hospital.views.checkout_payment checkout-payment
+/data-table/    hospital.views.data_table       data-table
+/delete-prescription/<int:pk>/  hospital.views.delete_prescription      delete-prescription
+/delete-report/<int:pk>/        hospital.views.delete_report    delete-report
+/doctor/        doctor.views.doctor_login       doctor-login
+/doctor/accept-appointment/<int:pk>/    doctor.views.accept_appointment accept-appointment
+/doctor/appointments/   doctor.views.appointments       appointments
+/doctor/booking-success/        doctor.views.booking_success    booking-success
+/doctor/booking/<int:pk>/       doctor.views.booking    booking
+/doctor/create-prescription/<int:pk>/   doctor.views.create_prescription        create-prescription
+/doctor/delete-education/<int:pk>/      doctor.views.delete_education   delete-education
+/doctor/delete-experience/<int:pk>/     doctor.views.delete_experience  delete-experience
+/doctor/doctor-change-password/<int:pk> doctor.views.doctor_change_password     doctor-change-password
+/doctor/doctor-dashboard/       doctor.views.doctor_dashboard   doctor-dashboard
+/doctor/doctor-logout/  doctor.views.logoutDoctor       doctor-logout
+/doctor/doctor-profile-settings/        doctor.views.doctor_profile_settings    doctor-profile-settings
+/doctor/doctor-profile/<int:pk>/        doctor.views.doctor_profile     doctor-profile
+/doctor/doctor-register/        doctor.views.doctor_register    doctor-register
+/doctor/doctor-test-list/       doctor.views.doctor_test_list   doctor-test-list
+/doctor/doctor-view-prescription/<int:pk>/      doctor.views.doctor_view_prescription   doctor-view-prescription
+/doctor/doctor-view-report/<int:pk>/    doctor.views.doctor_view_report doctor-view-report
+/doctor/doctor_review/<int:pk>/ doctor.views.doctor_review      doctor_review
+/doctor/images/<path>   django.views.static.serve
+/doctor/my-patients/    doctor.views.my_patients        my-patients
+/doctor/patient-id/     doctor.views.patient_id patient-id
+/doctor/patient-profile/<int:pk>/       doctor.views.patient_profile    patient-profile
+/doctor/patient-search/<int:pk>/        doctor.views.patient_search     patient-search
+/doctor/pdf/<int:pk>/   doctor.views.report_pdf pdf
+/doctor/reject-appointment/<int:pk>/    doctor.views.reject_appointment reject-appointment
+/doctor/schedule-timings/       doctor.views.schedule_timings   schedule-timings
+/doctor/static/<path>   django.views.static.serve
+/edit-billing/  hospital.views.edit_billing     edit-billing
+/edit-prescription/     hospital.views.edit_prescription        edit-prescription
+/hospital-department-list/<int:pk>/     hospital.views.hospital_department_list hospital-department-list
+/hospital-doctor-list/<int:pk>/ hospital.views.hospital_doctor_list     hospital-doctor-list
+/hospital-doctor-register/<int:pk>/     hospital.views.hospital_doctor_register hospital-doctor-register
+/hospital-profile/<int:pk>/     hospital.views.hospital_profile hospital-profile
+/hospital_admin/        hospital_admin.views.admin_login        admin-login
+/hospital_admin/accept-doctor/<int:pk>/ hospital_admin.views.accept_doctor      accept-doctor
+/hospital_admin/add-hospital/   hospital_admin.views.add_hospital       add-hospital
+/hospital_admin/add-lab-worker/ hospital_admin.views.add_lab_worker     add-lab-worker
+/hospital_admin/add-medicine/   hospital_admin.views.add_medicine       add-medicine
+/hospital_admin/add-pharmacist/ hospital_admin.views.add_pharmacist     add-pharmacist
+/hospital_admin/add-test/       hospital_admin.views.add_test   add-test
+/hospital_admin/admin-dashboard/        hospital_admin.views.admin_dashboard    admin-dashboard
+/hospital_admin/admin-doctor-profile/<int:pk>/  hospital_admin.views.admin_doctor_profile       admin-doctor-profile
+/hospital_admin/admin-logout/   hospital_admin.views.logoutAdmin        admin-logout
+/hospital_admin/admin_register/ hospital_admin.views.admin_register     admin_register
+/hospital_admin/appointment-list        hospital_admin.views.appointment_list   appointment-list
+/hospital_admin/create-invoice/<int:pk>/        hospital_admin.views.create_invoice     create-invoice
+/hospital_admin/create-report/<int:pk>/ hospital_admin.views.create_report      create-report
+/hospital_admin/delete-department/<int:pk>      hospital_admin.views.delete_department  delete-department
+/hospital_admin/delete-hospital/<int:pk>/       hospital_admin.views.delete_hospital    delete-hospital
+/hospital_admin/delete-medicine/<int:pk>/       hospital_admin.views.delete_medicine    delete-medicine
+/hospital_admin/delete-service/<int:pk>/<int:pk2>/      hospital_admin.views.delete_service     delete-service
+/hospital_admin/delete-specialization/<int:pk>/<int:pk2>/       hospital_admin.views.delete_specialization      delete-specialization
+/hospital_admin/delete-test/<int:pk>/   hospital_admin.views.delete_test        delete-test
+/hospital_admin/department-image-list/<int:pk>  hospital_admin.views.department_image_list      department-image-list
+/hospital_admin/edit-department/<int:pk>        hospital_admin.views.edit_department    edit-department
+/hospital_admin/edit-emergency-information/<int:pk>/    hospital_admin.views.edit_emergency_information edit-emergency-information
+/hospital_admin/edit-hospital/<int:pk>/ hospital_admin.views.edit_hospital      edit-hospital
+/hospital_admin/edit-lab-worker/<int:pk>/       hospital_admin.views.edit_lab_worker    edit-lab-worker
+/hospital_admin/edit-medicine/<int:pk>/ hospital_admin.views.edit_medicine      edit-medicine
+/hospital_admin/edit-pharmacist/<int:pk>/       hospital_admin.views.edit_pharmacist    edit-pharmacist
+/hospital_admin/emergency/      hospital_admin.views.emergency_details  emergency
+/hospital_admin/forgot-password/        hospital_admin.views.admin_forgot_password      admin_forgot_password
+/hospital_admin/hospital-admin-profile/<int:pk>/        hospital_admin.views.hospital_admin_profile     hospital-admin-profile
+/hospital_admin/hospital-admin-profile/<int:pk>/        hospital_admin.views.hospital_admin_profile     hospital-admin-profile
+/hospital_admin/hospital-list/  hospital_admin.views.hospital_list      hospital-list
+/hospital_admin/hospital-list/  hospital_admin.views.hospital_list      hospital-list
+/hospital_admin/hospital-profile/       hospital_admin.views.hospital_profile   hospital-profile
+/hospital_admin/images/<path>   django.views.static.serve
+/hospital_admin/invoice-report/ hospital_admin.views.invoice_report     invoice_report
+/hospital_admin/invoice/        hospital_admin.views.invoice    invoice
+/hospital_admin/lab-worker-list/        hospital_admin.views.view_lab_worker    lab-worker-list
+/hospital_admin/labworker-dashboard/    hospital_admin.views.labworker_dashboard        labworker-dashboard
+/hospital_admin/lock-screen/    hospital_admin.views.lock_screen        lock_screen
+/hospital_admin/login/  hospital_admin.views.admin_login        admin_login
+/hospital_admin/medicine-list/  hospital_admin.views.medicine_list      medicine-list
+/hospital_admin/mypatient-list/ hospital_admin.views.mypatient_list     mypatient-list
+/hospital_admin/patient-list/   hospital_admin.views.patient_list       patient-list
+/hospital_admin/pending-doctor-list/    hospital_admin.views.pending_doctor_list        pending-doctor-list
+/hospital_admin/pharmacist-dashboard/   hospital_admin.views.pharmacist_dashboard       pharmacist-dashboard
+/hospital_admin/pharmacist-list/        hospital_admin.views.view_pharmacist    pharmacist-list
+/hospital_admin/prescription-list/<int:pk>      hospital_admin.views.prescription_list  prescription-list
+/hospital_admin/register-doctor-list/   hospital_admin.views.register_doctor_list       register-doctor-list
+/hospital_admin/reject-doctor/<int:pk>/ hospital_admin.views.reject_doctor      reject-doctor
+/hospital_admin/report-history/ hospital_admin.views.report_history     report-history
+/hospital_admin/static/<path>   django.views.static.serve
+/hospital_admin/test-list/      hospital_admin.views.test_list  test-list
+/hospital_admin/transactions-list/      hospital_admin.views.transactions_list  transactions_list
+/images/<path>  django.views.static.serve
+/images/<path>  django.views.static.serve
+/login/ hospital.views.login_user       login
+/logout/        hospital.views.logoutUser       logout
+/multiple-hospital/     hospital.views.multiple_hospital        multiple-hospital
+/patient-dashboard/     hospital.views.patient_dashboard        patient-dashboard
+/patient-register/      hospital.views.patient_register patient-register
+/pharmacy/add-to-cart/<int:pk>  pharmacy.views.add_to_cart      add-to-cart
+/pharmacy/cart/ pharmacy.views.cart_view        cart
+/pharmacy/checkout/     pharmacy.views.checkout checkout
+/pharmacy/decrease-item/<int:pk>/       pharmacy.views.decrease_cart    decrease-item
+/pharmacy/images/<path> django.views.static.serve
+/pharmacy/increase-item/<int:pk>/       pharmacy.views.increase_cart    increase-item
+/pharmacy/product-single/<int:pk>/      pharmacy.views.pharmacy_single_product  product-single
+/pharmacy/remove-item/<int:pk>/ pharmacy.views.remove_from_cart remove-item
+/pharmacy/shop/ pharmacy.views.pharmacy_shop    pharmacy_shop
+/pharmacy/static/<path> django.views.static.serve
+/pres_pdf/<int:pk>/     hospital.views.prescription_pdf pres_pdf
+/prescription-view/<int:pk>     hospital.views.prescription_view        prescription-view
+/privacy-policy/        hospital.views.privacy_policy   privacy-policy
+/profile-settings/      hospital.views.profile_settings profile-settings
+/reset/<uidb64>/<token>/        django.contrib.auth.views.PasswordResetConfirmView      password_reset_confirm
+/reset_password/        django.contrib.auth.views.PasswordResetView     reset-password
+/reset_password_complete/       django.contrib.auth.views.PasswordResetCompleteView     password_reset_complete
+/reset_password_sent/   django.contrib.auth.views.PasswordResetDoneView password_reset_done
+/search/        hospital.views.search   search
+/shop/  hospital.views.pharmacy_shop    pharmacy_shop
+/sslcommerz/    sslcommerz.views.payment_home   payment_home
+/sslcommerz/images/<path>       django.views.static.serve
+/sslcommerz/payment-testing/<int:pk>/   sslcommerz.views.payment_testing        payment-testing
+/sslcommerz/ssl-payment-cancel/ sslcommerz.views.ssl_payment_cancel     ssl-payment-cancel
+/sslcommerz/ssl-payment-fail/   sslcommerz.views.ssl_payment_fail       ssl-payment-fail
+/sslcommerz/ssl-payment-request-medicine/<int:pk>/<int:id>/     sslcommerz.views.ssl_payment_request_medicine   ssl-payment-request-medicine
+/sslcommerz/ssl-payment-request-test/<int:pk>/<int:id>/<int:pk2>/       sslcommerz.views.ssl_payment_request_test       ssl-payment-request-test
+/sslcommerz/ssl-payment-request/<int:pk>/<int:id>/      sslcommerz.views.ssl_payment_request    ssl-payment-request
+/sslcommerz/ssl-payment-success/        sslcommerz.views.ssl_payment_success    ssl-payment-success
+/sslcommerz/static/<path>       django.views.static.serve
+/static/<path>  django.views.static.serve
+/static/<path>  django.views.static.serve
+/test-add-to-cart/<int:pk>/<int:pk2>/   hospital.views.test_add_to_cart test-add-to-cart
+/test-cart/<int:pk>/    hospital.views.test_cart        test-cart
+/test-remove-cart/<int:pk>/     hospital.views.test_remove_cart test-remove-cart
+/test-single/<int:pk>/  hospital.views.test_single      test-single
+/testing/       hospital.views.testing  testing
+/view-report/<int:pk>   hospital.views.view_report
+
+
+

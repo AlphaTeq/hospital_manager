@@ -4,6 +4,8 @@ from django.conf import settings
 from django.conf.urls.static import static
 from .pdf import report_pdf
 
+from rest_framework.schemas import get_schema_view
+
 
 # from . --> same directory
 # Views functions and urls must be linked. # of views == # of urls
@@ -35,9 +37,15 @@ urlpatterns = [
     path('doctor-test-list/', views.doctor_test_list, name='doctor-test-list'),
     path('doctor-view-prescription/<int:pk>/', views.doctor_view_prescription, name='doctor-view-prescription'),
     path('doctor-view-report/<int:pk>/', views.doctor_view_report, name='doctor-view-report'),
-
 ]
-
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+urlpatterns += [
+    path('openapi/', get_schema_view(
+        title="My API",
+        description="API for frontend use",
+        version="1.0.0"
+    ), name='openapi-schema'),
+]

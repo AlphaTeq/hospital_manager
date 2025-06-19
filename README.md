@@ -172,6 +172,3 @@ Accept appointment:
 <img src="https://user-images.githubusercontent.com/64092765/191054866-189bb76f-3377-440a-84be-d07578a26c35.jpg" width="50%">
 
 
-
-
-
